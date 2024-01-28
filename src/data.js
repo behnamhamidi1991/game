@@ -85,3 +85,9 @@ export const genres = [
     img: fight,
   },
 ];
+
+export const production = [
+  {
+    id: 1,
+  },
+];
