@@ -40,15 +40,16 @@
 .nav {
   background-color: #282d40;
   color: #fefefe;
-  width: 230px;
+  width: 12%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: all ease-in-out 0.4s;
+  z-index: 1000;
   .navHeader {
     transition: ease 0.3s;
     opacity: 0;

@@ -14,7 +14,7 @@ import { IoLogOutSharp } from "react-icons/io5";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <nav className={openMenu ? "nav" : "nav nav-closed"}>
