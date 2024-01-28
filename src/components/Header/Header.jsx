@@ -56,10 +56,10 @@ const Header = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            Slide 2
+            Create an ultimate account
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
+            Create an ultimate account to enter our competitions
           </div>
           <div className="text" data-swiper-parallax="-100">
             <p>
@@ -75,10 +75,10 @@ const Header = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            Slide 3
+            Start streaming for free
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
+            Streaming is free and you can earn money
           </div>
           <div className="text" data-swiper-parallax="-100">
             <p>
