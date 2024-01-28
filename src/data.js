@@ -1,7 +1,7 @@
 import re3 from "../public/slides/re3-slide.jpg";
 import ghost from "../public/slides/gr-slide.jpg";
-import mk from "../public/slides/mk-slide.jpg";
-import nfs from "../public/slides/nfs-slide.jpg";
+import mk from "../public/slides/mk.jpg";
+import nfs from "../public/slides/nfss.jpg";
 import re2 from "../public/slides/re2-slide.jpg";
 
 export const featured = [
@@ -58,36 +58,113 @@ import action from "../public/genres/action.jpg";
 import fight from "../public/genres/fight.jpg";
 import sport from "../public/genres/sport.jpg";
 import strategic from "../public/genres/strategic.jpg";
+import race from "../public/genres/race.jpg";
 
 export const genres = [
   {
     id: 1,
     title: "Strategic",
-    players: "2543",
+    players: "8593",
     img: strategic,
   },
   {
     id: 2,
     title: "Action",
-    players: "2543",
+    players: "6123",
     img: action,
   },
   {
     id: 3,
     title: "Sport",
-    players: "2543",
+    players: "8543",
     img: sport,
   },
   {
     id: 4,
     title: "Fight",
-    players: "2543",
+    players: "6543",
     img: fight,
   },
+  {
+    id: 5,
+    title: "Race",
+    players: "5543",
+    img: race,
+  },
 ];
+
+import fifa from "../public/productions/fifa.jpg";
+import mafia from "../public/productions/mafia.jpg";
+import mortal from "../public/productions/mk.jpg";
+import need from "../public/productions/nfs.jpg";
+import re2remake from "../public/productions/re2.jpg";
+import re3remake from "../public/productions/re3.jpg";
+import stronghold from "../public/productions/stronghold.jpg";
+import tomb from "../public/productions/tomb.jpg";
 
 export const production = [
   {
     id: 1,
+    title: "FIFA 2023",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "41",
+    img: fifa,
+  },
+  {
+    id: 2,
+    title: "Mafia Definitive",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "32",
+    img: mafia,
+  },
+  {
+    id: 3,
+    title: "Mortal Kombat X",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "40",
+    img: mortal,
+  },
+  {
+    id: 4,
+    title: "Resident Evil 2 Remake",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "38",
+    img: re2remake,
+  },
+  {
+    id: 5,
+    title: "Need For Speed: Heat",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "35",
+    img: need,
+  },
+  {
+    id: 6,
+    title: "Resident Evil 3 Remake",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "32",
+    img: re3remake,
+  },
+  {
+    id: 7,
+    title: "Stronghold: Warlord",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "38",
+    img: stronghold,
+  },
+  {
+    id: 8,
+    title: "Tomb Rider",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique voluptate ab quisquam, odit distinctio tenetur nulla aliquid quod placeat veniam vero nisi hic blanditiis deleniti. Id iure perspiciatis ex soluta perferendis mollitia deleniti aperiam provident cupiditate enim aut corrupti totam maxime dicta, reprehenderit.",
+    price: "26",
+    img: tomb,
   },
 ];
