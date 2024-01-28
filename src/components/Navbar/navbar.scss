@@ -131,3 +131,45 @@
 .nav-closed {
   width: 70px;
 }
+
+@media screen and (max-width: 1626px) {
+  .nav {
+    width: 20%;
+  }
+  .nav-closed {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .nav {
+    width: 24%;
+  }
+  .nav-closed {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .nav {
+    width: 32%;
+  }
+  .nav-closed {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 688px) {
+  .nav {
+    width: 42%;
+  }
+  .nav-closed {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    width: 62%;
+  }
+  .nav-closed {
+    width: 70px;
+  }
+}
