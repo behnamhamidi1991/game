@@ -15,12 +15,12 @@
 .nav {
   background-color: #282d40;
   color: #fefefe;
-  width: 400px;
+  width: 70px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   align-items: center;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  z-index: 1000;
 }

@@ -1,4 +1,5 @@
 "use client";
+import FeaturedSlider from "@/components/FeaturedSlider/FeaturedSlider";
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import Image from "next/image";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className={theme ? "homepage dark" : "homepage light"}>
       <Header />
+      <FeaturedSlider />
     </main>
   );
 }
