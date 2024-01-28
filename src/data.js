@@ -53,3 +53,35 @@ export const featured = [
     img: re2,
   },
 ];
+
+import action from "../public/genres/action.jpg";
+import fight from "../public/genres/fight.jpg";
+import sport from "../public/genres/sport.jpg";
+import strategic from "../public/genres/strategic.jpg";
+
+export const genres = [
+  {
+    id: 1,
+    title: "Strategic",
+    players: "2543",
+    img: strategic,
+  },
+  {
+    id: 2,
+    title: "Action",
+    players: "2543",
+    img: action,
+  },
+  {
+    id: 3,
+    title: "Sport",
+    players: "2543",
+    img: sport,
+  },
+  {
+    id: 4,
+    title: "Fight",
+    players: "2543",
+    img: fight,
+  },
+];
