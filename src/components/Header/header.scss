@@ -1,0 +1,30 @@
+.light {
+  --bg: #fefefe;
+  --bg-secondary: #eaeaea;
+  --text: #0a162c;
+  --text-secondary: #4f5258;
+}
+
+.dark {
+  --bg: #0a162c;
+  --bg-secondary: #282d40;
+  --text: #fefefe;
+  --text-secondary: #d8d8d8;
+}
+
+header {
+  color: var(--text);
+  padding: 50px 10%;
+  width: 100%;
+  h1 {
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--text);
+    font-family: "Roboto";
+    b {
+      font-size: 72px;
+      font-weight: 900;
+      font-family: "Poppins";
+    }
+  }
+}

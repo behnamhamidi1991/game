@@ -1,0 +1,26 @@
+.light {
+  --bg: #fefefe;
+  --bg-secondary: #eaeaea;
+  --text: #0a162c;
+  --text-secondary: #4f5258;
+}
+
+.dark {
+  --bg: #0a162c;
+  --bg-secondary: #282d40;
+  --text: #fefefe;
+  --text-secondary: #d8d8d8;
+}
+
+.nav {
+  background-color: #282d40;
+  color: #fefefe;
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
