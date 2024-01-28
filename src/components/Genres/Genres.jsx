@@ -17,10 +17,12 @@ const Genres = () => {
       <div className="genres-container">
         {genres.map((item) => (
           <div key={item.id} className="genre-box">
-            <Image src={item.img} alt={item.title} className="image" />
+            <div className="zoomIn">
+              <Image src={item.img} alt={item.title} className="image" />
+            </div>
             <div className="content">
               <h4>{item.title}</h4>
-              <p>{item.players}</p>
+              <p>{item.players} Players</p>
             </div>
           </div>
         ))}
