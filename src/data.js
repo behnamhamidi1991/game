@@ -98,7 +98,7 @@ import mafia from "../public/productions/mafia.jpg";
 import mortal from "../public/productions/mk.jpg";
 import need from "../public/productions/nfs.jpg";
 import re2remake from "../public/productions/re2.jpg";
-import re3remake from "../public/productions/re3.jpg";
+import re3remake from "../public/productions/residentvil3.jpeg";
 import stronghold from "../public/productions/stronghold.jpg";
 import tomb from "../public/productions/tomb.jpg";
 
