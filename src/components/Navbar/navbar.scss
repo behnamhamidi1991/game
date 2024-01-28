@@ -12,15 +12,121 @@
   --text-secondary: #d8d8d8;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .nav {
   background-color: #282d40;
   color: #fefefe;
-  width: 270px;
+  width: 230px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   align-items: center;
-  position: fixed;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+  .navHeader {
+    transition: ease 0.3s;
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    h2 {
+      margin-bottom: 4px;
+      font-size: 18px;
+      text-align: center;
+    }
+    p {
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+
+  .icons ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+    margin-top: 70px;
+
+    .link-items {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+      transition: all ease-in-out 0.1s;
+      .icon {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+        transition: ease 0.3s;
+        opacity: 0;
+        -webkit-animation: fadeIn ease-in 1;
+        -moz-animation: fadeIn ease-in 1;
+        animation: fadeIn ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 1s;
+      }
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+
+  .open-btn {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: #383f5f;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: -12px;
+    cursor: pointer;
+  }
+}
+
+.nav-closed {
+  width: 70px;
 }
