@@ -1,0 +1,124 @@
+.footer {
+  margin-left: 90px;
+  padding: 25px;
+  margin-top: 100px;
+  .footer-container {
+    background-color: rgb(252, 252, 252);
+    padding: 55px 35px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    .header {
+      flex: 1;
+    }
+    .middle {
+      display: flex;
+      gap: 80px;
+      flex: 2;
+
+      ul {
+        line-height: 1.5;
+        h3 {
+          font-weight: 300;
+          margin-bottom: 5px;
+        }
+        li a {
+          color: #0a162c;
+        }
+      }
+    }
+    .bottom {
+      flex: 2;
+      h2 {
+        font-weight: 300;
+        margin-bottom: 5px;
+      }
+      p {
+        line-height: 1.7;
+      }
+      form {
+        margin-top: 10px;
+        position: relative;
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 10px 12px;
+          border-bottom: 1px solid #0a162c;
+        }
+        button {
+          border: none;
+          padding: 5px;
+          background-color: #0a162c;
+          color: #fff;
+          position: absolute;
+          right: 1px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1638px) {
+//   .footer {
+//     margin: 0 5%;
+//     padding: 25px;
+//     margin-top: 100px;
+//     .footer-container {
+//       background-color: rgb(252, 252, 252);
+//       padding: 55px 35px;
+//       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+//       display: flex;
+//       justify-content: space-between;
+
+//       .header {
+//       }
+//       .middle {
+//         display: flex;
+//         gap: 80px;
+
+//         ul {
+//           line-height: 1.5;
+//           h3 {
+//             font-weight: 300;
+//             margin-bottom: 5px;
+//           }
+//           li a {
+//             color: #0a162c;
+//           }
+//         }
+//       }
+//       .bottom {
+//         h2 {
+//           font-weight: 300;
+//           margin-bottom: 5px;
+//         }
+//         p {
+//           line-height: 1.7;
+//         }
+//         form {
+//           margin-top: 10px;
+//           position: relative;
+//           input {
+//             width: 100%;
+//             border: none;
+//             outline: none;
+//             padding: 10px 12px;
+//             border-bottom: 1px solid #0a162c;
+//           }
+//           button {
+//             border: none;
+//             padding: 5px;
+//             background-color: #0a162c;
+//             color: #fff;
+//             position: absolute;
+//             right: 1px;
+//             bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

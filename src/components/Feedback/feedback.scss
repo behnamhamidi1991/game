@@ -50,3 +50,34 @@
     }
   }
 }
+
+@media screen and (max-width: 1086px) {
+  .feedback {
+    .mySwiper {
+      .slide {
+        .content {
+          p {
+            padding: 0 2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .feedback {
+    padding-bottom: 50px;
+    .mySwiper {
+      padding-bottom: 450px;
+      .slide {
+        .content {
+          p {
+            padding: 0;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
