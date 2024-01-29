@@ -186,49 +186,91 @@ export const gamers = [
   {
     id: 1,
     img: person1,
+    online: true,
   },
   {
     id: 2,
     img: person2,
+    online: false,
   },
   {
     id: 3,
     img: person3,
+    online: true,
   },
   {
     id: 4,
     img: person4,
+    online: true,
   },
   {
     id: 5,
     img: person5,
+    online: false,
   },
   {
     id: 6,
     img: person6,
+    online: true,
   },
   {
     id: 7,
     img: person7,
+    online: true,
   },
   {
     id: 8,
     img: person8,
+    online: true,
   },
   {
     id: 9,
     img: person9,
+    online: false,
   },
   {
     id: 10,
     img: person10,
+    online: true,
   },
   {
     id: 11,
     img: person11,
+    online: true,
   },
   {
     id: 12,
     img: person12,
+    online: true,
+  },
+  {
+    id: 13,
+    img: person12,
+    online: false,
+  },
+  {
+    id: 14,
+    img: person12,
+    online: false,
+  },
+  {
+    id: 15,
+    img: person12,
+    online: true,
+  },
+  {
+    id: 16,
+    img: person12,
+    online: false,
+  },
+  {
+    id: 17,
+    img: person12,
+    online: true,
+  },
+  {
+    id: 18,
+    img: person12,
+    online: true,
   },
 ];
