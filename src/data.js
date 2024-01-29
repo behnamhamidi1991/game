@@ -168,3 +168,67 @@ export const production = [
     img: tomb,
   },
 ];
+
+import person1 from "../public/users/1.jpg";
+import person2 from "../public/users/2.jpg";
+import person3 from "../public/users/3.jpg";
+import person4 from "../public/users/4.jpg";
+import person5 from "../public/users/5.jpg";
+import person6 from "../public/users/6.jpg";
+import person7 from "../public/users/7.jpg";
+import person8 from "../public/users/8.jpg";
+import person9 from "../public/users/9.jpg";
+import person10 from "../public/users/10.jpg";
+import person11 from "../public/users/11.jpg";
+import person12 from "../public/users/12.jpg";
+
+export const gamers = [
+  {
+    id: 1,
+    img: person1,
+  },
+  {
+    id: 2,
+    img: person2,
+  },
+  {
+    id: 3,
+    img: person3,
+  },
+  {
+    id: 4,
+    img: person4,
+  },
+  {
+    id: 5,
+    img: person5,
+  },
+  {
+    id: 6,
+    img: person6,
+  },
+  {
+    id: 7,
+    img: person7,
+  },
+  {
+    id: 8,
+    img: person8,
+  },
+  {
+    id: 9,
+    img: person9,
+  },
+  {
+    id: 10,
+    img: person10,
+  },
+  {
+    id: 11,
+    img: person11,
+  },
+  {
+    id: 12,
+    img: person12,
+  },
+];

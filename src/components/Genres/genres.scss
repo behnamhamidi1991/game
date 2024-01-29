@@ -1,5 +1,5 @@
 .genres {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 120px;
   padding: 0 5%;
   padding-bottom: 100px;
@@ -25,16 +25,15 @@
       position: relative;
       background-color: #000;
       cursor: pointer;
-      border-radius: 15px;
+      border-radius: 11px;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
       .zoomIn {
         overflow: hidden;
-        border-radius: 15px;
+        border-radius: 11px;
         .image {
-          border-radius: 20px;
+          border-radius: 11px;
           width: 100%;
           height: 100%;
-          border-radius: 20px;
           opacity: 0.5;
           object-fit: cover;
           transform: scale(1.1);
@@ -50,13 +49,13 @@
         position: absolute;
         bottom: 35px;
         left: 20px;
-        h4 {
+        .genre-title {
           color: #fff;
-          background-color: orangered;
+          letter-spacing: 1px;
           width: fit-content;
           padding: 3px 7px;
           border-radius: 10px;
-          font-size: 15px;
+          font-size: 14px;
           font-weight: 300;
           font-weight: 700;
           text-transform: uppercase;

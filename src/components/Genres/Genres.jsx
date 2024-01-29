@@ -21,7 +21,7 @@ const Genres = () => {
               <Image src={item.img} alt={item.title} className="image" />
             </div>
             <div className="content">
-              <h4>{item.title}</h4>
+              <h4 className="genre-title">{item.title}</h4>
               <p>{item.players} Players</p>
             </div>
           </div>
