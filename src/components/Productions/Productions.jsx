@@ -23,7 +23,7 @@ const Productions = () => {
             </div>
             <div className="content">
               <h3>{game.title}</h3>
-              <p>{game.content}</p>
+              <p>{game.content.substring(1, 250)} ...</p>
               <button>
                 Buy the license <MdShoppingCart className="btn-icon" />
               </button>
