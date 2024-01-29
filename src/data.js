@@ -400,11 +400,33 @@ export const stories = [
     storyImg: story7,
     profileImg: person13,
   },
-  // {
-  //   id: 8,
-  //   title: "Resident Evil 2: Remake",
-  //   descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-  //   storyImg: story8,
-  //   profileImg: person15,
-  // },
+];
+
+import activision from "../public/companies/activision.jpg";
+import blizzard from "../public/companies/blizzard.jpg";
+import capcom from "../public/companies/capcom.jpg";
+import ea from "../public/companies/ea.jpg";
+import ubisoft from "../public/companies/ubisoft.jpg";
+
+export const companies = [
+  {
+    id: 1,
+    img: activision,
+  },
+  {
+    id: 2,
+    img: blizzard,
+  },
+  {
+    id: 3,
+    img: capcom,
+  },
+  {
+    id: 4,
+    img: ea,
+  },
+  {
+    id: 5,
+    img: ubisoft,
+  },
 ];

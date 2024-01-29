@@ -1,124 +1,115 @@
 .footer {
   margin-left: 90px;
-  padding: 25px;
-  margin-top: 100px;
+  margin-right: 30px;
+  padding-bottom: 30px;
   .footer-container {
-    background-color: rgb(252, 252, 252);
-    padding: 55px 35px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    background-color: #282d40;
+    padding: 50px 30px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     .header {
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      p {
+        font-weight: 300;
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
+      .companies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 3%;
+        justify-content: center;
+        .image-container {
+          .image {
+            width: 130px;
+            height: 60px;
+            border-radius: 2px;
+          }
+        }
+      }
     }
     .middle {
       display: flex;
-      gap: 80px;
-      flex: 2;
-
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 90px;
+      gap: 90px;
       ul {
-        line-height: 1.5;
         h3 {
-          font-weight: 300;
+          font-weight: 500;
           margin-bottom: 5px;
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #8a90a7;
         }
-        li a {
-          color: #0a162c;
+
+        li {
+          margin-bottom: 6px;
+          a {
+            font-size: 13px;
+            color: #fff;
+            font-weight: 300;
+          }
         }
       }
     }
     .bottom {
-      flex: 2;
-      h2 {
-        font-weight: 300;
-        margin-bottom: 5px;
-      }
-      p {
-        line-height: 1.7;
-      }
-      form {
-        margin-top: 10px;
-        position: relative;
-        input {
-          width: 100%;
-          border: none;
-          outline: none;
-          padding: 10px 12px;
-          border-bottom: 1px solid #0a162c;
+      display: flex;
+      justify-content: center;
+      margin-top: 90px;
+    }
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .footer {
+    .footer-container {
+      .header {
+        h2 {
+          font-size: 24px;
         }
-        button {
-          border: none;
-          padding: 5px;
-          background-color: #0a162c;
-          color: #fff;
-          position: absolute;
-          right: 1px;
-          bottom: 0;
+        p {
+          font-size: 13px;
         }
       }
     }
   }
 }
-
-// @media screen and (max-width: 1638px) {
-//   .footer {
-//     margin: 0 5%;
-//     padding: 25px;
-//     margin-top: 100px;
-//     .footer-container {
-//       background-color: rgb(252, 252, 252);
-//       padding: 55px 35px;
-//       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-//       display: flex;
-//       justify-content: space-between;
-
-//       .header {
-//       }
-//       .middle {
-//         display: flex;
-//         gap: 80px;
-
-//         ul {
-//           line-height: 1.5;
-//           h3 {
-//             font-weight: 300;
-//             margin-bottom: 5px;
-//           }
-//           li a {
-//             color: #0a162c;
-//           }
-//         }
-//       }
-//       .bottom {
-//         h2 {
-//           font-weight: 300;
-//           margin-bottom: 5px;
-//         }
-//         p {
-//           line-height: 1.7;
-//         }
-//         form {
-//           margin-top: 10px;
-//           position: relative;
-//           input {
-//             width: 100%;
-//             border: none;
-//             outline: none;
-//             padding: 10px 12px;
-//             border-bottom: 1px solid #0a162c;
-//           }
-//           button {
-//             border: none;
-//             padding: 5px;
-//             background-color: #0a162c;
-//             color: #fff;
-//             position: absolute;
-//             right: 1px;
-//             bottom: 0;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 482px) {
+  .footer {
+    margin-left: 85px;
+    margin-right: 10px;
+    .footer-container {
+      background-color: #282d40;
+      padding: 50px 20px;
+      .header {
+        h2 {
+          font-size: 21px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      .middle {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 90px;
+        gap: 20px;
+      }
+      .bottom {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -2,91 +2,106 @@ import React from "react";
 import "./footer.scss";
 import Image from "next/image";
 import icon from "../../../public/favicon.ico";
+import { companies } from "@/data";
 
 const Footer = () => {
+  const getDate = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="header">
-          <Image src={icon} width={100} height={100} alt="icon" />
-          <h2>MetaGameR</h2>
+          <h2>MetaGamer Community</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            minima dolores rem enim dicta quo!
+          </p>
+          <div className="companies">
+            {companies.map((item) => (
+              <div key={item.id} className="image-container">
+                <Image src={item.img} alt="game-companies" className="image" />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="middle">
           <ul className="links">
-            <h3>Pages</h3>
+            <h3>Quick Links</h3>
             <li className="link">
-              <a href="#">Home</a>
+              <a href="#">Home Page</a>
             </li>
             <li className="link">
-              <a href="#">Blog</a>
+              <a href="#">Cart Section</a>
             </li>
             <li className="link">
-              <a href="#">Contact</a>
+              <a href="#">Blog Page</a>
             </li>
             <li className="link">
-              <a href="#">About</a>
-            </li>
-          </ul>
-          <ul className="links">
-            <h3>Community</h3>
-            <li className="link">
-              <a href="#">Hords</a>
+              <a href="#">About Page</a>
             </li>
             <li className="link">
-              <a href="#">Alliance</a>
-            </li>
-            <li className="link">
-              <a href="#">Avernus</a>
-            </li>
-            <li className="link">
-              <a href="#">Stormwind</a>
+              <a href="#">Contact Page</a>
             </li>
           </ul>
           <ul className="links">
-            <h3>Community</h3>
+            <h3>Get Connected</h3>
             <li className="link">
-              <a href="#">Hords</a>
+              <a href="#">Connectivity</a>
             </li>
             <li className="link">
-              <a href="#">Alliance</a>
+              <a href="#">Dashboard</a>
             </li>
             <li className="link">
-              <a href="#">Avernus</a>
+              <a href="#">loT SIM Card</a>
             </li>
             <li className="link">
-              <a href="#">Stormwind</a>
+              <a href="#">Hologram Hyper</a>
+            </li>
+            <li className="link">
+              <a href="#">Hologram Nova</a>
             </li>
           </ul>
           <ul className="links">
-            <h3>Community</h3>
+            <h3>Resources</h3>
             <li className="link">
-              <a href="#">Hords</a>
+              <a href="#">Using Hologram</a>
             </li>
             <li className="link">
-              <a href="#">Alliance</a>
+              <a href="#">Docs Supported</a>
             </li>
             <li className="link">
-              <a href="#">Avernus</a>
+              <a href="#">Supported Hardware</a>
             </li>
             <li className="link">
-              <a href="#">Stormwind</a>
+              <a href="#">High Valume Data</a>
+            </li>
+            <li className="link">
+              <a href="#">Hologram Nova</a>
+            </li>
+          </ul>
+          <ul className="links">
+            <h3>Developers</h3>
+            <li className="link">
+              <a href="#">Forum Section</a>
+            </li>
+            <li className="link">
+              <a href="#">Project Section</a>
+            </li>
+            <li className="link">
+              <a href="#">Open Source</a>
+            </li>
+            <li className="link">
+              <a href="#">Flexible Data</a>
+            </li>
+            <li className="link">
+              <a href="#">Coverage Map</a>
             </li>
           </ul>
         </div>
 
         <div className="bottom">
-          <h2>Join & Follow Us</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur praesentium saepe sunt, voluptas, id consectetur,
-            adipisci ullam possimus reprehenderit quam voluptatem? Placeat iure,
-            minus dolorum veritatis vel quia nam facilis?
-          </p>
-          <form>
-            <input type="email" placeholder="Enter your email" />
-            <button>Submit</button>
-          </form>
+          <p>Copyright {getDate} - All rights for MetaGameR is reserved</p>
         </div>
       </div>
     </footer>
