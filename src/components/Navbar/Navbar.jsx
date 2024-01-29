@@ -11,9 +11,20 @@ import { GiLaurelsTrophy } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa";
 import { IoLogOutSharp } from "react-icons/io5";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
+  const { loading, cartItems } = useSelector((state) => state.cart);
+
+  const addToCartHandler = (qty) => {
+    dispatchEvent(addToCart({ qty }));
+  };
+
+  const removeFromCartHandler = (id) => {
+    dispatchEvent(removeFromCart(id));
+  };
 
   return (
     <nav className={openMenu ? "nav" : "nav nav-closed"}>
@@ -32,11 +43,11 @@ const Navbar = () => {
       )}
       <div className="icons">
         <ul>
-          <Link href="/" className="link-items">
+          <Link href="/cart" className="link-items">
             <MdShoppingCart className="icon" />
             {openMenu && <p>Cart</p>}
             <span className={openMenu ? "number open" : "number closed"}>
-              0
+              {loading ? "" : cartItems.reduce((a, c) => a + c.qty, 0)}
             </span>
           </Link>
           <Link href="/" className="link-items">
