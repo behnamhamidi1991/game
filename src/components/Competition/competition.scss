@@ -2,6 +2,7 @@
   margin-top: 100px;
   margin-left: 120px;
   padding: 0 5%;
+  padding-bottom: 200px;
 
   .header {
     margin-bottom: 20px;
@@ -255,6 +256,25 @@
     .right {
       width: 100%;
       gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .competition {
+    .competition-container {
+      .right {
+        gap: 10px;
+        .profile-box {
+          .profile-image {
+            width: 60px;
+            height: 60px;
+          }
+          span {
+            right: 0px;
+          }
+        }
+      }
     }
   }
 }
