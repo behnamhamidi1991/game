@@ -262,6 +262,30 @@
 
 @media screen and (max-width: 410px) {
   .competition {
+    padding: 0 3%;
+
+    .competition-container {
+      .left {
+        .left-content {
+          .info {
+            padding-right: 10px;
+            .price {
+              font-size: 10px;
+            }
+            .players {
+              font-size: 10px;
+            }
+            .servers {
+              font-size: 10px;
+            }
+            .team {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
     .competition-container {
       .right {
         gap: 10px;
@@ -271,7 +295,8 @@
             height: 60px;
           }
           span {
-            right: 0px;
+            right: 5px;
+            font-size: 9px;
           }
         }
       }
