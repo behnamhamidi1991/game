@@ -48,6 +48,7 @@
           display: flex;
           gap: 8px;
           margin-top: 18px;
+          flex-wrap: wrap;
           .price {
             background-color: rgb(39, 177, 184);
             padding: 5px 10px;
@@ -101,11 +102,7 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      background-color: white;
       padding: 20px 0;
-      border-top: 1px solid #bcbcbc;
-      border-right: 1px solid #bcbcbc;
-      border-bottom: 1px solid #bcbcbc;
       border-radius: 0 5px 5px 0;
       .profile-box {
         position: relative;
@@ -140,6 +137,21 @@
         .offline {
           background-color: gray;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1762px) {
+  .competition {
+    .competition-container {
+      display: flex;
+      flex-direction: column;
+      .left {
+        width: 100%;
+      }
+      .right {
+        width: 100%;
       }
     }
   }
