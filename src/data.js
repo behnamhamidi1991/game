@@ -280,3 +280,63 @@ export const gamers = [
     online: true,
   },
 ];
+
+export const feedback = [
+  {
+    id: 1,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Jake Meannheim",
+    img: person1,
+  },
+  {
+    id: 2,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Jane Fillip",
+    img: person2,
+  },
+  {
+    id: 3,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Tilda Feinmann",
+    img: person3,
+  },
+  {
+    id: 4,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Martina Lopez",
+    img: person4,
+  },
+  {
+    id: 5,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Alan Wane",
+    img: person5,
+  },
+  {
+    id: 6,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Sylvia Tracy",
+    img: person10,
+  },
+  {
+    id: 7,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Aria Chambers",
+
+    img: person6,
+  },
+  {
+    id: 8,
+    feedback:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. Maxime error similique",
+    username: "Samira Nasiri",
+    img: person15,
+  },
+];
