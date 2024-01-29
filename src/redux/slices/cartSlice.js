@@ -35,7 +35,9 @@ const cartSlice = createSlice({
       );
       Cookies.set("cart", JSON.stringify(state));
     },
-    removeFromCart: (state, action) => {},
+    removeFromCart: (state, action) => {
+      state.cartItems = state.cartItems.filter((x) => x.id !== action.payload);
+    },
   },
 });
 
