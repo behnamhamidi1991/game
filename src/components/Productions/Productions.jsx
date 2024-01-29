@@ -2,7 +2,7 @@ import React from "react";
 import "./productions.scss";
 import { production } from "@/data";
 import Image from "next/image";
-import { MdShoppingCart } from "react-icons/md";
+import AddToCart from "../shared/AddToCart";
 
 const Productions = () => {
   return (
@@ -24,9 +24,7 @@ const Productions = () => {
             <div className="content">
               <h3>{game.title}</h3>
               <p>{game.content.substring(1, 250)} ...</p>
-              <button>
-                Buy the license <MdShoppingCart className="btn-icon" />
-              </button>
+              <AddToCart className="add-to-cart-btn" />
             </div>
           </div>
         ))}
