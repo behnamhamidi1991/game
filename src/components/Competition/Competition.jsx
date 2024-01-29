@@ -24,7 +24,7 @@ const Competition = () => {
               in the world
             </p>
             <div className="info">
-              <p className="price">Price: 45.00</p>
+              <p className="price">Price: $45.00</p>
               <p className="players">Total Number Players: 412</p>
               <p className="servers">Servers: 11</p>
               <p className="team">Team Player Game</p>
