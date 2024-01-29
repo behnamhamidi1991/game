@@ -18,6 +18,7 @@ export default function Home() {
       <Genres />
       <Competition />
       <Stream />
+      <Feedback />
     </main>
   );
 }
