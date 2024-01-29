@@ -1,0 +1,93 @@
+.stream {
+  margin-top: 50px;
+  margin-left: 120px;
+  padding: 0 5%;
+
+  .header {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+
+  .video {
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      .video-box {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        display: grid;
+        position: relative;
+        .content {
+          position: absolute;
+          bottom: 50px;
+          left: 30px;
+          h4 {
+            font-size: 34px;
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 13px;
+            color: #fff;
+          }
+        }
+        &:first-child {
+          grid-row-start: 1;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+        .image-container {
+          background-color: #000;
+          .image {
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+          }
+        }
+
+        .profile {
+          position: absolute;
+          z-index: 1000;
+          right: 30px;
+          top: 28px;
+          .profile-image {
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            background: linear-gradient(red, orangered) padding-box,
+              linear-gradient(to right, red, orange) border-box;
+            cursor: pointer;
+            &:hover {
+              background: linear-gradient(orangered, red) padding-box,
+                linear-gradient(to right, orangered, red) border-box;
+            }
+          }
+          span {
+            position: absolute;
+            z-index: 1001;
+            background-color: red;
+            color: #fff;
+            top: 65px;
+            right: 20px;
+            padding: 5px 6px;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}

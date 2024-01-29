@@ -340,3 +340,71 @@ export const feedback = [
     img: person15,
   },
 ];
+
+import stream1 from "../public/stream/story1.jpg";
+import story2 from "../public/stream/story2.jpg";
+import story3 from "../public/stream/story3.jpg";
+import story4 from "../public/stream/story4.jpg";
+import story5 from "../public/stream/story5.jpg";
+import story6 from "../public/stream/story6.jpg";
+import story7 from "../public/stream/story7.jpg";
+import story8 from "../public/stream/story8.jpg";
+
+export const stories = [
+  {
+    id: 1,
+    title: "Age of Empires",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    storyImg: stream1,
+    profileImg: person1,
+  },
+  {
+    id: 2,
+    title: "Resident Evil 3: Remake",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    storyImg: story2,
+    profileImg: person3,
+  },
+  {
+    id: 3,
+    title: "Battlefield V",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    storyImg: story3,
+    profileImg: person6,
+  },
+  // {
+  //   id: 4,
+  //   title: "Stronghold 2",
+  //   descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  //   storyImg: story4,
+  //   profileImg: person7,
+  // },
+  {
+    id: 5,
+    title: "Company Of Heros",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    storyImg: story5,
+    profileImg: person10,
+  },
+  {
+    id: 6,
+    title: "Skyrim V",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    storyImg: story6,
+    profileImg: person12,
+  },
+  {
+    id: 7,
+    title: "FIFA 23",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    storyImg: story7,
+    profileImg: person13,
+  },
+  // {
+  //   id: 8,
+  //   title: "Resident Evil 2: Remake",
+  //   descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  //   storyImg: story8,
+  //   profileImg: person15,
+  // },
+];

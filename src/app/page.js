@@ -1,8 +1,10 @@
 "use client";
 import Competition from "@/components/Competition/Competition";
+import Feedback from "@/components/Feedback/Feedback";
 import Genres from "@/components/Genres/Genres";
 import Header from "@/components/Header/Header";
 import Productions from "@/components/Productions/Productions";
+import Stream from "@/components/Stream/Stream";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -15,6 +17,7 @@ export default function Home() {
       <Productions />
       <Genres />
       <Competition />
+      <Stream />
     </main>
   );
 }
