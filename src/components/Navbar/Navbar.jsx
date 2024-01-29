@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-import { FaMoon } from "react-icons/fa";
-import { GoSun } from "react-icons/go";
+import { FaSquarePen } from "react-icons/fa6";
 import { MdShoppingCart } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
@@ -34,16 +33,19 @@ const Navbar = () => {
       <div className="icons">
         <ul>
           <Link href="/" className="link-items">
-            <FaMoon className="icon" />
-            {openMenu && <p>Theme</p>}
-          </Link>
-          <Link href="/" className="link-items">
             <MdShoppingCart className="icon" />
             {openMenu && <p>Cart</p>}
+            <span className={openMenu ? "number open" : "number closed"}>
+              0
+            </span>
           </Link>
           <Link href="/" className="link-items">
             <FaUser className="icon" />
             {openMenu && <p>Dashboard</p>}
+          </Link>
+          <Link href="/" className="link-items">
+            <FaSquarePen className="icon" />
+            {openMenu && <p>Theme</p>}
           </Link>
           <Link href="/" className="link-items">
             <MdOutlineSlowMotionVideo className="icon" />

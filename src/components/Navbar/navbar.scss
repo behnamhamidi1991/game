@@ -84,6 +84,7 @@
 
     .link-items {
       display: flex;
+      position: relative;
       gap: 15px;
       align-items: center;
       text-transform: uppercase;
@@ -93,6 +94,7 @@
       .icon {
         font-size: 24px;
       }
+
       p {
         font-size: 12px;
         transition: ease 0.3s;
@@ -110,6 +112,28 @@
       }
       &:hover {
         color: orange;
+      }
+
+      .number {
+        background-color: red;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        position: absolute;
+      }
+      .closed {
+        top: -16px;
+        right: -13px;
+      }
+      .open {
+        top: -16px;
+        right: 32px;
       }
     }
   }
