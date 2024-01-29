@@ -173,3 +173,18 @@
     width: 70px;
   }
 }
+@media screen and (max-width: 430px) {
+  .nav {
+    .icons ul {
+      gap: 32px;
+      .link-items {
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .nav-closed {
+    width: 55px;
+  }
+}

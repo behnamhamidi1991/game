@@ -101,7 +101,7 @@ body {
     font-size: 13px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .swiper-slide .title {
     font-size: 19px;
   }
@@ -111,5 +111,9 @@ body {
 
   .swiper-slide .text {
     font-size: 12px;
+  }
+
+  .slider-container {
+    margin-left: 55px;
   }
 }
