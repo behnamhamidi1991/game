@@ -181,6 +181,12 @@ import person9 from "../public/users/9.jpg";
 import person10 from "../public/users/10.jpg";
 import person11 from "../public/users/11.jpg";
 import person12 from "../public/users/12.jpg";
+import person13 from "../public/users/13.jpg";
+import person14 from "../public/users/14.jpg";
+import person15 from "../public/users/15.jpg";
+import person16 from "../public/users/16.jpg";
+import person17 from "../public/users/17.jpg";
+import person18 from "../public/users/18.jpg";
 
 export const gamers = [
   {
@@ -245,32 +251,32 @@ export const gamers = [
   },
   {
     id: 13,
-    img: person12,
+    img: person13,
     online: false,
   },
   {
     id: 14,
-    img: person12,
+    img: person14,
     online: false,
   },
   {
     id: 15,
-    img: person12,
+    img: person15,
     online: true,
   },
   {
     id: 16,
-    img: person12,
+    img: person16,
     online: false,
   },
   {
     id: 17,
-    img: person12,
+    img: person17,
     online: true,
   },
   {
     id: 18,
-    img: person12,
+    img: person18,
     online: true,
   },
 ];
