@@ -26,6 +26,7 @@
       cursor: pointer;
       border-radius: 11px;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      transition: all ease-in-out 0.2s;
       .zoomIn {
         overflow: hidden;
         border-radius: 5px;
@@ -46,17 +47,27 @@
       }
       .content {
         position: absolute;
-        bottom: 15px;
-        left: 17px;
+        bottom: 20px;
+        left: 12px;
+
         .genre-title {
-          color: #fff;
+          color: #e7e7e7;
           letter-spacing: 3px;
           width: fit-content;
           padding: 3px 7px;
           border-radius: 10px;
-          font-size: 11px;
+          font-size: 21px;
           font-weight: 300;
           text-transform: uppercase;
+          box-shadow: 6px 6px 10px 6px rgba(0, 0, 0, 0.5);
+          align-items: center;
+          display: none;
+          transition: all ease-in-out 0.2s;
+        }
+      }
+      &:hover {
+        .genre-title {
+          display: block;
         }
       }
     }
