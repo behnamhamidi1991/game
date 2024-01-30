@@ -28,9 +28,9 @@
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
       .zoomIn {
         overflow: hidden;
-        border-radius: 11px;
+        border-radius: 5px;
         .image {
-          border-radius: 11px;
+          border-radius: 5px;
           width: 100%;
           height: 100%;
           opacity: 0.5;
@@ -46,27 +46,17 @@
       }
       .content {
         position: absolute;
-        bottom: 35px;
-        left: 20px;
+        bottom: 15px;
+        left: 17px;
         .genre-title {
           color: #fff;
-          letter-spacing: 1px;
+          letter-spacing: 3px;
           width: fit-content;
           padding: 3px 7px;
           border-radius: 10px;
-          font-size: 14px;
+          font-size: 11px;
           font-weight: 300;
-          font-weight: 700;
           text-transform: uppercase;
-        }
-        p {
-          color: #fff;
-          background-color: rgb(34, 66, 140);
-          width: fit-content;
-          padding: 5px 10px;
-          border-radius: 10px;
-          margin-top: 5px;
-          font-size: 13px;
         }
       }
     }

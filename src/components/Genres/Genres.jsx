@@ -1,9 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { genres } from "@/data";
 import Image from "next/image";
 import "./genres.scss";
 
 const Genres = () => {
+  const [hoverTitle, setHoverTitle] = useState(true);
+
   return (
     <div className="genres">
       <div className="header">
@@ -22,7 +25,7 @@ const Genres = () => {
             </div>
             <div className="content">
               <h4 className="genre-title">{item.title}</h4>
-              <p>{item.players} Players</p>
+              {/* <p>{item.players} Players</p> */}
             </div>
           </div>
         ))}

@@ -2,7 +2,7 @@ import React from "react";
 import "./productions.scss";
 import { production } from "@/data";
 import Image from "next/image";
-import AddToCart from "../shared/AddToCart";
+import AddToCart from "../shared/AddToCart/AddToCart";
 
 const Productions = () => {
   return (
