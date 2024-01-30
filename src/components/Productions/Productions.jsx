@@ -3,6 +3,7 @@ import "./productions.scss";
 import { production } from "@/data";
 import Image from "next/image";
 import AddToCart from "../shared/AddToCart/AddToCart";
+import Link from "next/link";
 
 const Productions = () => {
   return (
@@ -24,7 +25,12 @@ const Productions = () => {
             <div className="content">
               <h3>{game.title}</h3>
               <p>{game.content.substring(1, 250)} ...</p>
-              <AddToCart className="add-to-cart-btn" />
+              <div className="button-container">
+                <AddToCart className="add-to-cart-btn" />
+                <Link href="/" className="read-btn">
+                  Read More
+                </Link>
+              </div>
             </div>
           </div>
         ))}

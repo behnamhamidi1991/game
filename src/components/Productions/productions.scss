@@ -46,6 +46,26 @@
           color: rgb(49, 49, 49);
           margin-bottom: 10px;
         }
+        .button-container {
+          display: flex;
+          gap: 4px;
+          .read-btn {
+            padding: 6px 8px;
+            border: none;
+            background-color: #e2e2e2;
+            color: #4b4b4b;
+            cursor: pointer;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all ease-in-out 0.1s;
+            font-size: 14px;
+            &:hover {
+              background-color: #cacaca;
+            }
+          }
+        }
       }
     }
   }
