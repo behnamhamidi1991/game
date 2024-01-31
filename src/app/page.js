@@ -13,7 +13,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(false);
   }, []);
 
   if (isLoading) {
