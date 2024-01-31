@@ -5,15 +5,19 @@ import Image from "next/image";
 import Link from "next/link";
 import AddToCart from "@/components/shared/AddToCart/AddToCart";
 import { IoMdHome } from "react-icons/io";
+import { AiOutlineLike } from "react-icons/ai";
+import { AiOutlineDislike } from "react-icons/ai";
+
 // Images
 import profile1 from "../../../../public/users/1.jpg";
 import profile2 from "../../../../public/users/2.jpg";
 import profile3 from "../../../../public/users/3.jpg";
-import profile4 from "../../../../public/users/4.jpg";
 import profile5 from "../../../../public/users/5.jpg";
 
 const singleProduct = ({ params: { id } }) => {
   const newProduct = production.find((item) => item.id === id);
+
+  const sidebarProduction = production.filter((item) => item.id !== id);
 
   if (!newProduct) {
     return <div className="pl-20">This page does not exist!</div>;
@@ -65,6 +69,14 @@ const singleProduct = ({ params: { id } }) => {
                   eaque consequuntur dolor, explicabo est totam qui ipsum velit
                   praesentium earum fugiat eveniet! Enim!
                 </div>
+                <div className="like">
+                  <button className="like-dislike">
+                    <AiOutlineLike />3
+                  </button>
+                  <button className="like-dislike">
+                    <AiOutlineDislike />1
+                  </button>
+                </div>
               </div>
               <div className="user-comment-box">
                 <div className="user-image-box">
@@ -76,6 +88,14 @@ const singleProduct = ({ params: { id } }) => {
                 </div>
                 <div className="text-comment">
                   Lorem ipsum dolor sit amet consectetur.
+                </div>
+                <div className="like">
+                  <button className="like-dislike">
+                    <AiOutlineLike />5
+                  </button>
+                  <button className="like-dislike">
+                    <AiOutlineDislike />2
+                  </button>
                 </div>
               </div>
               <div className="user-comment-box">
@@ -90,6 +110,14 @@ const singleProduct = ({ params: { id } }) => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
                   dolore dolores aliquid! Perferendis molestias error nesciunt.
                 </div>
+                <div className="like">
+                  <button className="like-dislike">
+                    <AiOutlineLike />7
+                  </button>
+                  <button className="like-dislike">
+                    <AiOutlineDislike />0
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -103,23 +131,40 @@ const singleProduct = ({ params: { id } }) => {
             Go Back To Homepage <IoMdHome />{" "}
           </Link>
         </div>
-        <Link href="/" className="other-productions">
-          {production.map((item) => (
-            <div key={item.id} className="post-box">
-              <div className="image-box">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  className="sidebar-images"
-                />
+        <div className="other-productions-container">
+          <Link href="/" className="other-productions">
+            {sidebarProduction.map((item) => (
+              <div key={item.id} className="post-box">
+                <div className="image-box">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    className="sidebar-images"
+                  />
+                </div>
+                <div className="title">
+                  <h4>{item.title}</h4>
+                  <p>{item.content.substring(1, 89)} ...</p>
+                </div>
               </div>
-              <div className="title">
-                <h4>{item.title}</h4>
-                <p>{item.content.substring(1, 89)} ...</p>
-              </div>
-            </div>
-          ))}
-        </Link>
+            ))}
+          </Link>
+          <div className="writer">
+            <Image
+              src={profile5}
+              alt="blog-writer-profile"
+              className="blog-writer-profile"
+            />
+            <h3>Blog Writer</h3>
+            <p>Nicky Taylor</p>
+            <p>
+              About me: Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Iure, ipsum illo! Blanditiis beatae labore ut corporis ab
+              atque animi, reprehenderit reiciendis at asperiores aspernatur
+              nisi illum deserunt, deleniti quasi nobis.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
