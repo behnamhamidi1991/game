@@ -100,7 +100,7 @@
             .like-dislike {
               background-color: transparent;
               border: none;
-              font-size: 20px;
+              font-size: 16px;
               display: flex;
               align-items: center;
               gap: 4px;
@@ -119,9 +119,10 @@
             }
           }
           .text-comment {
-            line-height: 1.8;
+            line-height: 1.6;
             font-weight: 500;
             font-size: 14px;
+            padding-bottom: 30px;
           }
         }
       }
@@ -275,6 +276,16 @@
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, auto));
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .user-comment-box {
+    flex-direction: column;
+    .like {
+      .like-dislike {
       }
     }
   }
