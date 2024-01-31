@@ -27,7 +27,7 @@ const Productions = () => {
               <p>{game.content.substring(1, 250)} ...</p>
               <div className="button-container">
                 <AddToCart className="add-to-cart-btn" />
-                <Link href="/" className="read-btn">
+                <Link href={`/product/${game.id}`} className="read-btn">
                   Read More
                 </Link>
               </div>
