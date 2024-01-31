@@ -2,7 +2,14 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 400px;
-  left: 47%;
+  top: 50%;
+  left: 44%;
   z-index: 10000;
+}
+
+@media screen and (max-width: 720px) {
+  .spinner {
+    width: 100px;
+    height: 100px;
+  }
 }
