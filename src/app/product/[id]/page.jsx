@@ -130,12 +130,6 @@ const singleProduct = ({ params: { id } }) => {
           </div>
         </div>
       </div>
-      <div className="gap">
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
     </div>
   );
 };
