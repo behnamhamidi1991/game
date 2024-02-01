@@ -193,91 +193,124 @@ export const gamers = [
     id: 1,
     img: person1,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. :))))))",
   },
   {
     id: 2,
     img: person2,
     online: false,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 3,
     img: person3,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi.",
   },
   {
     id: 4,
     img: person4,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur??? :))))).",
   },
   {
     id: 5,
     img: person5,
     online: false,
+    comment: "Lorem ipsum dolor :))))))))))))",
   },
   {
     id: 6,
     img: person6,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab  facere optio quasi!!!!!!!!!!!",
   },
   {
     id: 7,
     img: person7,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi. numquam quas doloribus dolorum perferendis facere optio quasi. :(",
   },
   {
     id: 8,
     img: person8,
     online: true,
+    comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit ;)",
   },
   {
     id: 9,
     img: person9,
     online: false,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 10,
     img: person10,
     online: true,
+    comment: "Lorem ipsum dolor sit amet!!",
   },
   {
     id: 11,
     img: person11,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 12,
     img: person12,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 13,
     img: person13,
     online: false,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 14,
     img: person14,
     online: false,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 15,
     img: person15,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 16,
     img: person16,
     online: false,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam.",
   },
   {
     id: 17,
     img: person17,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
   {
     id: 18,
     img: person18,
     online: true,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsam ex similique? Iure aspernatur, ipsam excepturi sequi, ab porro velit sapiente modi facilis similique magnam nemo, numquam quas doloribus dolorum perferendis facere optio quasi.",
   },
 ];
 
