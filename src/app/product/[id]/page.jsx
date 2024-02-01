@@ -8,6 +8,12 @@ import { IoMdHome } from "react-icons/io";
 import { AiOutlineLike } from "react-icons/ai";
 import { AiOutlineDislike } from "react-icons/ai";
 import { gamers } from "@/data";
+import blogWriter from "../../../../public/users/17.jpg";
+import { CiInstagram } from "react-icons/ci";
+import { FaTelegram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const singleProduct = ({ params: { id } }) => {
   const newProduct = production.find((item) => item.id === id);
@@ -100,7 +106,35 @@ const singleProduct = ({ params: { id } }) => {
               ))}
             </div>
           </div>
+
+          <div className="blog-writer">
+            <div className="image-container">
+              <Image src={blogWriter} alt="writer" className="writer-image" />
+            </div>
+            <div className="about-writer">
+              <h5>About Me</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                recusandae soluta sequi voluptatibus? Aperiam nisi ea ab
+                perspiciatis. Recusandae commodi repellendus vitae blanditiis
+                fuga repellat quas itaque illum in accusantium.
+              </p>
+            </div>
+            <div className="contact">
+              <CiInstagram className="icon" />
+              <FaTelegram className="icon" />
+              <FaLinkedin className="icon" />
+              <FaFacebookSquare className="icon" />
+              <FaWhatsapp className="icon" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

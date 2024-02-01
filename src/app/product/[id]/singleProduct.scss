@@ -137,9 +137,7 @@
     }
 
     .sidebar {
-      background-color: #fff;
       padding: 12px 15px;
-      box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
       .recent-posts {
         .header {
           h2 {
@@ -151,6 +149,7 @@
           display: flex;
           flex-direction: column;
           gap: 10px;
+
           .post-box {
             .post-box-image-container {
               position: relative;
@@ -187,6 +186,64 @@
           }
         }
       }
+
+      .blog-writer {
+        margin-top: 50px;
+        padding: 0 20px;
+        .image-container {
+          text-align: center;
+          .writer-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+          }
+        }
+        .about-writer {
+          h5 {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 5px 0;
+            text-align: center;
+          }
+          p {
+            line-height: 1.6;
+            font-size: 14px;
+          }
+        }
+
+        .contact {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          margin-top: 20px;
+          .icon {
+            font-size: 22px;
+            cursor: pointer;
+            &:hover {
+              color: #244075;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .single-product {
+    .single-product-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .single-product {
+    margin-left: 90px;
+
+    .single-product-container {
     }
   }
 }
