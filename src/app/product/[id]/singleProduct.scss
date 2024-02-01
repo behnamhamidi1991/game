@@ -250,13 +250,6 @@
           .comments-container {
             flex-direction: column;
             align-items: center;
-            // gap: 15px;
-            // align-items: center;
-            // margin-bottom: 20px;
-            // background-color: #fff;
-            // padding: 20px;
-            // box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
-            // border-radius: 5px;
 
             .image-container {
               .profile-image {
@@ -310,6 +303,35 @@
             flex-direction: column;
             width: fit-content;
             height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .single-product {
+    margin-top: 100px;
+    margin-left: 60px;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    .single-product-container {
+      .sidebar {
+        .recent-posts {
+          .header {
+            .recent-posts-box {
+              .post-box {
+                .post-box-image-container {
+                  .recent-post-content {
+                    h3 {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
