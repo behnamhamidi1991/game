@@ -463,3 +463,16 @@ export const companies = [
     img: ubisoft,
   },
 ];
+
+import video1 from "../public/streaming.mp4";
+
+export const videos = [
+  {
+    id: 1,
+    title: "Streaming World of Tezars",
+    player: "Jena May",
+    account: "Premium",
+    Level: "87",
+    video: video1,
+  },
+];
