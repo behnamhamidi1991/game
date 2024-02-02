@@ -385,25 +385,28 @@ import story8 from "../public/stream/story8.jpg";
 
 export const stories = [
   {
-    id: 1,
+    id: "1",
     title: "Age of Empires",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: stream1,
     profileImg: person1,
+    src: "https://www.youtube.com/embed/BiC249vXiIo?si=F5ThuBQ1IP_lzfAQ",
   },
   {
-    id: 2,
+    id: "2",
     title: "Resident Evil 3: Remake",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story2,
     profileImg: person3,
+    src: "https://www.youtube.com/embed/j_RzhCR6fXs?si=SKK4d5JfYa0yomuB",
   },
   {
-    id: 3,
+    id: "3",
     title: "Battlefield V",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story3,
     profileImg: person6,
+    src: "https://www.youtube.com/embed/3U97eHziwgE?si=R4yYGd9p3slkdsql",
   },
   // {
   //   id: 4,
@@ -413,25 +416,28 @@ export const stories = [
   //   profileImg: person7,
   // },
   {
-    id: 5,
+    id: "5",
     title: "Company Of Heros",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story5,
     profileImg: person10,
+    src: "https://www.youtube.com/embed/BiC249vXiIo?si=F5ThuBQ1IP_lzfAQ",
   },
   {
-    id: 6,
+    id: "6",
     title: "Skyrim V",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story6,
     profileImg: person12,
+    src: "https://www.youtube.com/embed/UXSMHxygY9s?si=014k8_wkcncNU_Qg",
   },
   {
-    id: 7,
+    id: "7",
     title: "FIFA 23",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story7,
     profileImg: person13,
+    src: "https://www.youtube.com/embed/C2VNcQ6tZbs?si=qj2SFDiyl9PSBEIb",
   },
 ];
 
@@ -468,27 +474,27 @@ export const companies = [
 
 export const videos = [
   {
-    id: 1,
+    id: "1",
     src: "https://www.youtube.com/embed/UXSMHxygY9s?si=014k8_wkcncNU_Qg",
   },
   {
-    id: 2,
+    id: "2",
     src: "https://www.youtube.com/embed/j_RzhCR6fXs?si=SKK4d5JfYa0yomuB",
   },
   {
-    id: 3,
+    id: "3",
     src: "https://www.youtube.com/embed/BiC249vXiIo?si=F5ThuBQ1IP_lzfAQ",
   },
   {
-    id: 4,
+    id: "4",
     src: "https://www.youtube.com/embed/xO6PbsWX3zA?si=js-CkArvDCZHc7ZX",
   },
   {
-    id: 5,
+    id: "5",
     src: "https://www.youtube.com/embed/C2VNcQ6tZbs?si=qj2SFDiyl9PSBEIb",
   },
   {
-    id: 6,
+    id: "6",
     src: "https://www.youtube.com/embed/3U97eHziwgE?si=R4yYGd9p3slkdsql",
   },
 ];

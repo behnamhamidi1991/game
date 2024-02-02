@@ -21,7 +21,11 @@ const Stream = () => {
       <div className="video">
         <div className="video-container">
           {stories.map((item) => (
-            <div key={item.id} className="video-box">
+            <Link
+              key={item.id}
+              href={`/videos/${item.id}`}
+              className="video-box"
+            >
               <div className="profile">
                 <Image
                   src={item.profileImg}
@@ -37,7 +41,7 @@ const Stream = () => {
                 <h4>{item.title}</h4>
                 <p>{item.descrition}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
