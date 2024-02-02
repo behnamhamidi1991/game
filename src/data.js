@@ -408,15 +408,8 @@ export const stories = [
     profileImg: person6,
     src: "https://www.youtube.com/embed/3U97eHziwgE?si=R4yYGd9p3slkdsql",
   },
-  // {
-  //   id: 4,
-  //   title: "Stronghold 2",
-  //   descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-  //   storyImg: story4,
-  //   profileImg: person7,
-  // },
   {
-    id: "5",
+    id: "4",
     title: "Company Of Heros",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story5,
@@ -424,7 +417,7 @@ export const stories = [
     src: "https://www.youtube.com/embed/BiC249vXiIo?si=F5ThuBQ1IP_lzfAQ",
   },
   {
-    id: "6",
+    id: "5",
     title: "Skyrim V",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story6,
@@ -432,7 +425,7 @@ export const stories = [
     src: "https://www.youtube.com/embed/UXSMHxygY9s?si=014k8_wkcncNU_Qg",
   },
   {
-    id: "7",
+    id: "6",
     title: "FIFA 23",
     descrition: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     storyImg: story7,
