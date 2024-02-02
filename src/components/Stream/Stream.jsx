@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./stream.scss";
 import { stories } from "@/data";
@@ -5,9 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Stream = () => {
-  //   const storyLeft = stories.filter((item) => item.id === 1);
-  //   const storyRight = stories.filter((item) => item.id > 1);
-
   return (
     <div className="stream">
       <div className="header">
