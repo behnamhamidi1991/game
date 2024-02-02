@@ -464,15 +464,31 @@ export const companies = [
   },
 ];
 
-import video1 from "../public/streaming.mp4";
+// import video1 from "../public/videos/streaming.mp4";
 
 export const videos = [
   {
     id: 1,
-    title: "Streaming World of Tezars",
-    player: "Jena May",
-    account: "Premium",
-    Level: "87",
-    video: video1,
+    src: "https://www.youtube.com/embed/UXSMHxygY9s?si=014k8_wkcncNU_Qg",
+  },
+  {
+    id: 2,
+    src: "https://www.youtube.com/embed/j_RzhCR6fXs?si=SKK4d5JfYa0yomuB",
+  },
+  {
+    id: 3,
+    src: "https://www.youtube.com/embed/BiC249vXiIo?si=F5ThuBQ1IP_lzfAQ",
+  },
+  {
+    id: 4,
+    src: "https://www.youtube.com/embed/xO6PbsWX3zA?si=js-CkArvDCZHc7ZX",
+  },
+  {
+    id: 5,
+    src: "https://www.youtube.com/embed/C2VNcQ6tZbs?si=qj2SFDiyl9PSBEIb",
+  },
+  {
+    id: 6,
+    src: "https://www.youtube.com/embed/3U97eHziwgE?si=R4yYGd9p3slkdsql",
   },
 ];
