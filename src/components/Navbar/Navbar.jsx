@@ -10,8 +10,8 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import { GiLaurelsTrophy } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa";
 import { IoLogOutSharp } from "react-icons/io5";
+import { RiHome2Fill } from "react-icons/ri";
 import Link from "next/link";
-import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,6 +33,10 @@ const Navbar = () => {
       )}
       <div className="icons">
         <ul>
+          <Link href="/" className="link-items">
+            <RiHome2Fill className="icon" />
+            {openMenu && <p>Homepage</p>}
+          </Link>
           <Link href="/cart" className="link-items">
             <MdShoppingCart className="icon" />
             {openMenu && <p>Cart</p>}
@@ -46,7 +50,7 @@ const Navbar = () => {
           </Link>
           <Link href="/" className="link-items">
             <FaSquarePen className="icon" />
-            {openMenu && <p>Theme</p>}
+            {openMenu && <p>Tickets</p>}
           </Link>
           <Link href="/" className="link-items">
             <MdOutlineSlowMotionVideo className="icon" />
