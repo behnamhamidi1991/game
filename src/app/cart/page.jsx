@@ -1,19 +1,27 @@
+'use client';
 import React from 'react';
 import './cart.scss';
-import { production } from '@/data';
 import Image from 'next/image';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart, selectCart } from '@/features/cart/cartSlice';
 
 const Cart = () => {
-  const newProduction = production.filter((item) => item.id <= 3);
+  const cart = useSelector(selectCart);
 
   return (
     <div className="cart">
       <div className="cart-header">
         <h2>Cart</h2>
-        <p>You can manage your cart</p>
+        {cart.length === 0 ? (
+          <p>Your cart is empty!</p>
+        ) : cart.length === 1 ? (
+          <p>There is 1 item in your cart</p>
+        ) : (
+          <p>There are {cart.length} items in your cart</p>
+        )}
       </div>
       <div className="cart-container">
-        {newProduction.map((item) => (
+        {cart.map((item) => (
           <div key={item.id} className="cart-item-box">
             <div className="cart-image-container">
               <Image src={item.img} alt={item.title} className="cart-image" />
@@ -26,7 +34,7 @@ const Cart = () => {
 
             <div className="cart-button-container">
               <button>+</button>
-              <span>0</span>
+              <span>{item.quantity}</span>
               <button>-</button>
             </div>
           </div>

@@ -1,11 +1,20 @@
-import React from "react";
-import "./productions.scss";
-import { production } from "@/data";
-import Image from "next/image";
-import AddToCart from "../shared/AddToCart/AddToCart";
-import Link from "next/link";
+import React from 'react';
+import './productions.scss';
+import { production } from '@/data';
+import Image from 'next/image';
+import AddToCart from '../shared/AddToCart/AddToCart';
+import Link from 'next/link';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart, selectCart } from '@/features/cart/cartSlice';
 
 const Productions = () => {
+  const cart = useSelector(selectCart);
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (game) => {
+    dispatch(addToCart(game));
+  };
+
   return (
     <div className="productions">
       <div className="header">
@@ -26,7 +35,9 @@ const Productions = () => {
               <h3>{game.title}</h3>
               <p>{game.content.substring(1, 250)} ...</p>
               <div className="button-container">
-                <AddToCart className="add-to-cart-btn" />
+                <div onClick={() => handleAddToCart(game)}>
+                  <AddToCart className="add-to-cart-btn" />
+                </div>
                 <Link href={`/product/${game.id}`} className="read-btn">
                   Read More
                 </Link>

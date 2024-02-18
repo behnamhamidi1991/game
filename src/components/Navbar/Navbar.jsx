@@ -17,6 +17,8 @@ import { useDispatch, useSelector } from 'react-redux';
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  const cart = useSelector((state) => state.cart);
+
   return (
     <nav className={openMenu ? 'nav' : 'nav nav-closed'}>
       <button className="open-btn" onClick={() => setOpenMenu(!openMenu)}>
@@ -42,7 +44,7 @@ const Navbar = () => {
             <MdShoppingCart className="icon" />
             {openMenu && <p>Cart</p>}
             <span className={openMenu ? 'number open' : 'number closed'}>
-              0
+              {cart.length}
             </span>
           </Link>
           <Link href="/" className="link-items">
