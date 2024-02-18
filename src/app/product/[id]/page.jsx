@@ -1,11 +1,12 @@
 'use client';
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart, selectCart } from '@/features/cart/cartSlice';
 import { production } from '@/data';
 import './singleProduct.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import AddToCart from '@/components/shared/AddToCart/AddToCart';
-import { IoMdHome } from 'react-icons/io';
 import { AiOutlineLike } from 'react-icons/ai';
 import { AiOutlineDislike } from 'react-icons/ai';
 import { gamers } from '@/data';
@@ -15,10 +16,14 @@ import { FaTelegram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
-import { useSelector, useDispatch } from 'react-redux';
-import { addToCart, selectCart } from '@/features/cart/cartSlice';
 
-const singleProduct = ({ params: { id } }) => {
+const SingleProduct = ({ params: { id } }) => {
+  const cart = useSelector(selectCart);
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (newProduct) => {
+    dispatch(addToCart(newProduct));
+  };
   const newProduct = production.find((item) => item.id === id);
 
   const sidebarProduction = production.filter((item) => item.id !== id);
@@ -29,12 +34,6 @@ const singleProduct = ({ params: { id } }) => {
     return <div className="pl-20">This page does not exist!</div>;
   }
 
-  const cart = useSelector(selectCart);
-  const dispatch = useDispatch();
-
-  const handleAddToCart = (newProduct) => {
-    dispatch(addToCart(newProduct));
-  };
   return (
     <div className="single-product">
       <div className="single-product-container">
@@ -146,4 +145,4 @@ const singleProduct = ({ params: { id } }) => {
   );
 };
 
-export default singleProduct;
+export default SingleProduct;

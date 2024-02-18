@@ -4,7 +4,6 @@ import './cart.scss';
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  addToCart,
   selectCart,
   incrementQuantity,
   decrementQuantity,
