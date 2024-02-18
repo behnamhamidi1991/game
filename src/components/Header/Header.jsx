@@ -1,19 +1,19 @@
-"use client";
-import React from "react";
-import "./header.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+'use client';
+import React from 'react';
+import './header.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Parallax, Pagination, Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Header = () => {
   return (
     <div className="slider-container">
       <Swiper
         style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
         }}
         autoplay={{
           delay: 2500,
@@ -31,7 +31,7 @@ const Header = () => {
           slot="container-start"
           className="parallax-bg"
           style={{
-            "background-image": `url(./bg.jpg)`,
+            'background-image': `url(./bg.jpg)`,
           }}
           data-swiper-parallax="-23%"
         ></div>
