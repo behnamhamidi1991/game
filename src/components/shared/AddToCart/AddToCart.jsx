@@ -1,7 +1,7 @@
-"use client";
-import React, { useState } from "react";
-import "./add.scss";
-import { MdShoppingCart } from "react-icons/md";
+'use client';
+import React, { useState } from 'react';
+import './add.scss';
+import { MdShoppingCart } from 'react-icons/md';
 
 const AddToCart = () => {
   return (

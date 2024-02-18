@@ -1,19 +1,22 @@
-import React from "react";
-import { production } from "@/data";
-import "./singleProduct.scss";
-import Image from "next/image";
-import Link from "next/link";
-import AddToCart from "@/components/shared/AddToCart/AddToCart";
-import { IoMdHome } from "react-icons/io";
-import { AiOutlineLike } from "react-icons/ai";
-import { AiOutlineDislike } from "react-icons/ai";
-import { gamers } from "@/data";
-import blogWriter from "../../../../public/users/17.jpg";
-import { CiInstagram } from "react-icons/ci";
-import { FaTelegram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+'use client';
+import React from 'react';
+import { production } from '@/data';
+import './singleProduct.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+import AddToCart from '@/components/shared/AddToCart/AddToCart';
+import { IoMdHome } from 'react-icons/io';
+import { AiOutlineLike } from 'react-icons/ai';
+import { AiOutlineDislike } from 'react-icons/ai';
+import { gamers } from '@/data';
+import blogWriter from '../../../../public/users/17.jpg';
+import { CiInstagram } from 'react-icons/ci';
+import { FaTelegram } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart, selectCart } from '@/features/cart/cartSlice';
 
 const singleProduct = ({ params: { id } }) => {
   const newProduct = production.find((item) => item.id === id);
@@ -25,6 +28,13 @@ const singleProduct = ({ params: { id } }) => {
   if (!newProduct) {
     return <div className="pl-20">This page does not exist!</div>;
   }
+
+  const cart = useSelector(selectCart);
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (newProduct) => {
+    dispatch(addToCart(newProduct));
+  };
   return (
     <div className="single-product">
       <div className="single-product-container">
@@ -42,7 +52,9 @@ const singleProduct = ({ params: { id } }) => {
             </div>
             <div className="main-content-footer">
               <div className="main-content-btn-container">
-                <AddToCart />{" "}
+                <div onClick={() => handleAddToCart(newProduct)}>
+                  <AddToCart className="add-to-cart-btn" />
+                </div>
                 <span className="price">Price: ${newProduct.price}</span>
               </div>
               <div className="main-content-like-container">
